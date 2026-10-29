@@ -1,0 +1,7 @@
+services:
+  attendance-portal:
+    build: .
+    container_name: attendance-portal
+    ports:
+      - "8080:80"
+    restart: unless-stopped
