@@ -25,6 +25,8 @@ jobs:
         run: npm test
       - name: Build static site
         run: npm run build
+      - name: Build Docker image
+        run: docker build -t campus-attendance-portal .
       - name: Upload deployable package
         uses: actions/upload-pages-artifact@v4
         with:
